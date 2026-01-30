@@ -1,0 +1,51 @@
+.contenedor{
+	margin-top: 70px;
+}
+
+.clear{
+	clear: 	both;	
+}
+
+.arriba_der{
+	float:right;
+}
+
+.arriba_izq{
+	float:left;
+}
+
+.abajo_der{
+	float:right;
+}
+
+.abajo_izq{
+	float:left;
+}
+
+.no-sort::after { display: none!important; }
+.no-sort { pointer-events: none!important; cursor: default!important; }
+
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.fechas{
+	width: 25%;
+}
+.ancho-auto{
+	width: auto!important;
+}
+.ancho-max{
+	width: 100%!important;
+}
+/*
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+ -webkit-appearance: none; 
+ margin: 0; 
+}*/

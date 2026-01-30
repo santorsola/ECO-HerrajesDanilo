@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+/*PARA CAMBIO DE COLORES REEMPLAZAR LOS CODIGOS DEL TAG [COLOR]*/
+
+.mifancy{
+    border: 2px solid #111110;/*[COLOR] codigo de color de toda la web*/
+}
+
+.fancybox-skin{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #fff;
+}
+
+.fancybox-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.fancybox-inner{
+    height: auto !important;
+}
+
+
+.ui-tooltip {
+	padding: 5px;
+	color: black;
+	border-radius: 0px;
+	border: 2px solid #111110;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	box-shadow: 0 0 7px black;
+}

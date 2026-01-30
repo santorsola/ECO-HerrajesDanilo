@@ -1,0 +1,96 @@
+/*################################   GENERALES    #############################*/
+
+select {
+background: #fff !important;
+}
+  
+label {
+  margin-bottom: 0px !important;
+  margin-top: 5px !important;
+}
+
+.form-control[readonly] .form-control {
+  background-color: #fff !important;
+}
+
+.form-group-sm .form-control-static {
+  min-height: 0px !important;
+  padding: 5px 10px !important;
+}
+
+.navbar-brand {
+  font-size: 22px !important;
+  font-weight: bold !important;
+}	
+
+.navbar-right {
+margin-right: 0px !important;
+}
+
+.jumbotron {
+  padding-bottom: 15px !important;
+}
+
+@media screen and (min-width: 768px) {
+.jumbotron {
+    padding-bottom: 0px !important;
+  }
+
+
+.alert {
+  padding: 8px !important; /*padding: 15px;*/
+  margin-bottom: 15px !important; /*margin-bottom: 20px;*/
+}
+
+.modal-backdrop {
+  position: absolute !important;
+}
+
+.form-control[readonly]{
+  cursor: not-allowed !important;
+  background-color: #fff !important;
+}
+
+/*color de la x para cerrar los modales*/
+.close {color: #c2c2c2 !important;
+        opacity: 1 !important;}
+
+/*gris de fondo de los modales*/
+.modal-backdrop.fade {height: 3000px !important;}
+
+
+/*gris de fondo de los modales*/
+.img-thumbnail {max-height: 100px !important;}
+
+/*################################   COLORES    #############################*/
+/*datepicker*/
+
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  color: #ffffff;
+  background-color: #033c73 !important;		/*cambiar aca los colores del datepicker!!!!*/
+  border-color: #033c73 !important;			/*cambiar aca los colores del datepicker!!!!*/
+}
+
+/*modal*/
+.bootstrap-dialog.type-primary .modal-header {
+  background-color: #033c73 !important;		/*cambiar color del modal aca*/
+}

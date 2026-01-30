@@ -1,0 +1,232 @@
+/*PARA CAMBIO DE COLORES REEMPLAZAR LOS CODIGOS DEL TAG [COLOR]*/
+
+.main-grilla{
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: 500px;
+    font-size: 100px; /*para calculo de em mas facil*/
+
+    /* Flexbox */
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;    
+}
+
+.cant_x_pagina{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cant_x_pagina .activo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cant_x_pagina i{
+    font-size: 26px !important;
+    display: block;
+}
+
+.menu-grilla{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    flex-direction: row;
+}
+
+
+.resultado-grilla{
+    /* Flexbox */
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    align-content: flex-start;
+    justify-content:space-between;
+    flex: 1 1 80%;
+}
+
+.resultado-grilla h2{   
+    font-size: 0.25em;/*18px;*/
+}
+
+.resultado-grilla h3{  
+    font-size: 0.12em;/*18px;*/
+}
+
+.descrip-adicional{
+    font-size: 0.14em;/*15px;*/
+}
+
+.resultado-grilla table{
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.resultado-grilla td,.resultado-grilla th{
+    padding: 0px 10px;
+}
+
+.resultado-grilla table thead tr{
+    border-bottom: 2px solid #111110; /*[COLOR]*/
+    font-size: 0.17em;/*17px;*/
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+}
+
+.resultado-grilla table tbody tr{
+    border-bottom: 1px solid #111110;
+}
+
+
+.resultado-grilla table tbody tr:nth-child(2n){
+    background-color: #eaeaea;/*[COLOR]*/
+}
+
+
+.resultado-grilla .img-art-grilla{
+    height: 1em;/*100px;*/
+}
+/*
+.resultado-grilla input{
+    width: 50px;
+    font-size: 0.15em;
+    text-align:center;
+}*/
+
+.resultado-grilla input {
+    width: 3em;
+    /* font-size: 0.15em; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.resultado-grilla table tfoot .col5{
+    border-top: 2px solid #111110;
+    border-bottom: 2px solid #111110;
+    border-left: 2px solid #111110;
+    font-size: 0.2em;/*20px;*/
+    font-weight: bold;
+} 
+
+.resultado-grilla table tfoot .col6{
+    border-top: 2px solid #111110;
+    border-bottom: 2px solid #111110;
+    border-right:2px solid #111110;
+} 
+
+.resultado-grilla .espaciado{
+    border: 0px;
+    height: 0.1em;/*40px;*/
+}
+
+.resultado-grilla .col1{
+    width: 5%;
+    line-height: 0;
+}
+.resultado-grilla .col2{
+    width: auto;
+    font-size: 0.4em;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.resultado-grilla .col2 a{
+    display: block;
+}
+
+.resultado-grilla .col3{
+    width: auto;
+}
+.resultado-grilla .col4{
+    width: 10%;
+    text-align:center;
+    line-height: 0.15em;
+    font-size: 0.15em;
+}
+.resultado-grilla .col5{
+    width: 17%;
+    min-width: 90px;
+}
+.resultado-grilla .col6{
+    width: 5%;
+    line-height: 0;
+    font-size: 0.25em;
+    color:#111110;
+}
+.resultado-grilla .carrito-precio{
+    color:#111110;
+    text-align: right;
+    line-height: 0.15em;/*20px;*/
+    font-size: 0.15em;/*20px;*/
+}
+
+.icono-grilla{
+    font-size: 22px !important;    
+    background: #cd0a0a;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+
+
+
+
+
+a.mouseover-thumbnail-holder {
+  position:relative;
+  display:block;
+  float:left;
+  margin-right:10px;
+}
+.large-thumbnail-style {
+  display:block;
+  border:10px solid #fff;
+  box-shadow:0px 0px 5px #aaa;
+  height: 10em;  
+}
+a.mouseover-thumbnail-holder .large-thumbnail-style {
+  position:absolute;
+  top:0;
+  left:-9999px;
+  z-index:1;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+a.mouseover-thumbnail-holder:hover .large-thumbnail-style {
+  top:0;
+  left:105%;
+  z-index:1;
+  opacity:1;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 670px){ /*Cel*/
+    .main-grilla{
+        font-size: 70px;
+    }
+}
+
+
+@media screen and (min-width: 670px) and (max-width: 1100px){ /*Tablet*/
+    .main-grilla{
+        font-size: 80px;
+    }
+}

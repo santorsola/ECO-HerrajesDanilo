@@ -1,0 +1,425 @@
+.footer-comentarios{
+    width: 100%;
+    background-color: #EDEDED;
+    padding-top: 20px;
+    /* padding-bottom: 50px; */
+    margin-top: 20px;
+    margin-bottom: -20px;
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;    
+    align-items: strech;
+    justify-content:space-between;
+
+}
+
+.marquee-contenedor{
+
+    /* background: #ccc; */
+    /* width: 50%; */
+    height: 230px;
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+    overflow: hidden;
+    padding: 0 10%;
+}
+
+.footer-comentarios p{
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+
+.footer-comentarios-texto{
+    margin: 0 auto;
+    width: 100%;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    height: 180px;/*valores iguales*/
+}
+
+.footer-comentarios-autor{
+    margin: 0 auto;
+    width: 100%;
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+}
+
+
+
+.footer-comentarios p:nth-child(1) {
+    position: relative;
+    top: 0px;
+
+	animation: left-1 30s ease infinite;
+	-moz-animation: left-1 30s ease infinite;
+	-webkit-animation: left-1 30s ease infinite;
+}
+.footer-comentarios p:nth-child(2) {
+    position: relative;
+    top: -180px;/*valores iguales*/
+	animation: left-2 30s ease infinite;
+	-moz-animation: left-2 30s ease infinite;
+	-webkit-animation: left-2 30s ease infinite;
+}
+.footer-comentarios p:nth-child(3) {
+    position: relative;
+    top: -360px;/*valores iguales*/
+	animation: left-3 30s ease infinite;
+	-moz-animation: left-3 30s ease infinite;
+	-webkit-animation: left-3 30s ease infinite;
+}
+.footer-comentarios p:nth-child(4) {
+    position: relative;
+    top: -540px;/*valores iguales*/
+	animation: left-4 30s ease infinite;
+	-moz-animation: left-4 30s ease infinite;
+	-webkit-animation: left-4 30s ease infinite;
+}
+
+
+
+
+/*================================
+	Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+
+
+@-moz-keyframes left-1 {
+	0% {
+		-moz-transform:translateX(200%);/*siempre va*/
+	}
+	10% {
+		-moz-transform:translateX(0);/*se muestra*/
+	}
+	15% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	20% {
+		-moz-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-moz-transform:translateX(-200%);/*siempre va*/
+	}
+}
+@-moz-keyframes left-2 {
+	0% {
+		-moz-transform:translateX(200%);/*siempre va*/
+	}
+	20% {
+		-moz-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	25% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	35% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	45%{
+		-moz-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-moz-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+@-moz-keyframes left-3 {
+	0% {
+		-moz-transform:translateX(200%);/*siempre va*/
+	}
+	45% {
+		-moz-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	50% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	60% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	65%{
+		-moz-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-moz-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+
+@-moz-keyframes left-4 {
+	0% {
+		-moz-transform:translateX(200%);/*siempre va*/
+	}
+	65% {
+		-moz-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	70% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	80% {
+		-moz-transform:translateX(0);/*espera*/
+	}
+	90%{
+		-moz-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-moz-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+
+
+
+
+/** Webkit Keyframes **/
+
+@-webkit-keyframes left-1 {
+	0% {
+		-webkit-transform:translateX(200%);/*siempre va*/
+	}
+	10% {
+		-webkit-transform:translateX(0);/*se muestra*/
+	}
+	15% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	20% {
+		-webkit-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-webkit-transform:translateX(-200%);/*siempre va*/
+	}
+}
+@-webkit-keyframes left-2 {
+	0% {
+		-webkit-transform:translateX(200%);/*siempre va*/
+	}
+	20% {
+		-webkit-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	25% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	35% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	45%{
+		-webkit-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-webkit-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+@-webkit-keyframes left-3 {
+	0% {
+		-webkit-transform:translateX(200%);/*siempre va*/
+	}
+	45% {
+		-webkit-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	50% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	60% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	65%{
+		-webkit-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-webkit-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+
+@-webkit-keyframes left-4 {
+	0% {
+		-webkit-transform:translateX(200%);/*siempre va*/
+	}
+	65% {
+		-webkit-transform:translateX(200%);/*se muestra, coincide con el se va anterior*/
+	}
+	70% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	80% {
+		-webkit-transform:translateX(0);/*espera*/
+	}
+	90%{
+		-webkit-transform:translateX(-200%);/*se va*/
+	}
+	100%{
+		-webkit-transform:translateX(-200%);/*siempre va*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*================================
+	Move the Marquee Downwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes down-one {
+	0%	{
+		-moz-transform:translateY(-100%);
+	}
+	10% {
+		-moz-transform:translateY(0);
+	}
+	40% {
+		-moz-transform:translateY(0);
+	}
+	50% {
+		-moz-transform:translateY(100%);
+	}
+	100%{
+		-moz-transform:translateY(100%);
+	}
+}
+@-moz-keyframes down-two {
+	0% {
+		-moz-transform:translateY(-100%);
+	}
+	50% {
+		-moz-transform:translateY(-100%);
+	}
+	60% {
+		-moz-transform:translateY(0);		
+	}
+	90% {
+		-moz-transform:translateY(0);		
+	}
+	100%{
+		-moz-transform:translateY(100%);
+	}
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes down-one {
+	0% {
+		-webkit-transform:translateY(-100%);
+	}
+	10% {
+		-webkit-transform:translateY(0);
+	}
+	40% {
+		-webkit-transform:translateY(0);
+	}
+	50% {
+		-webkit-transform:translateY(100%);
+	}
+	100%{
+		-webkit-transform:translateY(100%);
+	}
+}
+@-webkit-keyframes down-two {
+	0% {
+		-webkit-transform:translateY(-100%);
+	}
+	50% {
+		-webkit-transform:translateY(-100%);
+	}
+	60% {
+		-webkit-transform:translateY(0);		
+	}
+	90% {
+		-webkit-transform:translateY(0);		
+	}
+	100%{
+		-webkit-transform:translateY(100%);
+	}
+}
+
+/*================================
+	Move the Marquee Upwards
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes up-one {
+	0%	{
+		-moz-transform:translateY(100%);
+	}
+	10% {
+		-moz-transform:translateY(0);
+	}
+	40% {
+		-moz-transform:translateY(0);
+	}
+	50% {
+		-moz-transform:translateY(-100%);
+	}
+	100%{
+		-moz-transform:translateY(-100%);
+	}
+}
+@-moz-keyframes up-two {
+	0% {
+		-moz-transform:translateY(100%);
+	}
+	50% {
+		-moz-transform:translateY(100%);
+	}
+	60% {
+		-moz-transform:translateY(0);		
+	}
+	90% {
+		-moz-transform:translateY(0);		
+	}
+	100%{
+		-moz-transform:translateY(-100%);
+	}
+}
+
+/** Webkit Keyframes **/
+@-webkit-keyframes up-one {
+	0% {
+		-webkit-transform:translateY(100%);
+	}
+	10% {
+		-webkit-transform:translateY(0);
+	}
+	40% {
+		-webkit-transform:translateY(0);
+	}
+	50% {
+		-webkit-transform:translateY(-100%);
+	}
+	100%{
+		-webkit-transform:translateY(-100%);
+	}
+}
+@-webkit-keyframes up-two {
+	0% {
+		-webkit-transform:translateY(100%);
+	}
+	50% {
+		-webkit-transform:translateY(100%);
+	}
+	60% {
+		-webkit-transform:translateY(0);		
+	}
+	90% {
+		-webkit-transform:translateY(0);		
+	}
+	100%{
+		-webkit-transform:translateY(-100%);
+	}
+}

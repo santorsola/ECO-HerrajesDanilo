@@ -1,0 +1,1 @@
+dir /b > 000txt.txt
